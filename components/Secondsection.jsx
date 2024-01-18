@@ -6,34 +6,53 @@ export default function Secondsection () {
   return (
     <>
       <div className={styles.secondsectionwrapper} >
-          <div className='flex items-center gap-[5px] p-[20px] w-[100%] bg-white rounded-[10px]' >
-             <img src="/assets/shoppingbag.svg" alt="" />
-             <div>
-                <p className="text-[#262626] text-[12px] font-[Poppins] font-[300] leading-normal" > Total Sales </p>
-                <p className="text-[#262626] text-[22px] font-[Poppins] font-[600] leading-normal" > $2,456 </p>
-             </div>
-          </div>
-          <div className='flex items-center gap-[4px] p-[20px] w-[100%] bg-white rounded-[10px]'>
-             <img src="/assets/shop.svg" alt="" />
-             <div>
-                <p className="text-[#262626] text-[12px] font-[Poppins] font-[300] leading-normal" > Total Expenses </p>
-                <p className="text-[#262626] text-[22px] font-[Poppins] font-[600] leading-normal" > $3,326 </p>
-             </div>
-          </div>
-          <div className='flex items-center gap-[4px] p-[20px] w-[100%] bg-white rounded-[10px]'>
-             <img src="/assets/people.svg" alt="" />
-             <div>
-                <p className="text-[#262626] text-[12px] font-[Poppins] font-[300] leading-normal" > Total Visitors </p>
-                <p className="text-[#262626] text-[22px] font-[Poppins] font-[600] leading-normal" > $5,325 </p>
-             </div>
-          </div>
-          <div className='flex items-center gap-[4px] p-[20px] w-[100%] bg-white rounded-[10px]'>
-             <img src="/assets/listpurple.svg" alt="" />
-             <div>
-                <p className="text-[#262626] text-[12px] font-[Poppins] font-[300] leading-normal" > Total Order </p>
-                <p className="text-[#262626] text-[22px] font-[Poppins] font-[600] leading-normal" > $1,326 </p>
-             </div>
-          </div>
+           <div className={styles.kite1} ></div>
+           <div className={styles.kite2} ></div>
+           <div className={styles.kite3} ></div>
+           <div className={styles.partnershipwrapper} >
+               <h3> Patnership </h3>
+               <div className={styles.lineseeall_wrapper} >
+                    <div className={styles.line} ></div>
+                    <div className={styles.seeallwrapper} >
+                        <p> See all </p>
+                        <div className={styles.rightwrapper}>
+                            <p className={styles.greaterthan}  > {'>'} </p>
+                        </div>
+                    </div>
+               </div>     
+           </div>
+           <div className={styles.communitygen_wrapper} >
+                <div className={styles.communitywrapper} >
+                    <p class="text-black font-[Montserrat] font-medium italic text-[20px] leading-35"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo. Nulla varius vitae. </p>
+                    <div className={styles.footerwrapper} >
+                        <div className={styles.circle} ></div>
+                        <div className={styles.footertext_wrapper} >
+                            <h2> BLOCKPI </h2>
+                            <p> Community </p>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.communitywrapper} >
+                    <p class="text-black font-[Montserrat] font-medium italic text-[20px] leading-35"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo. Nulla varius vitae. </p>
+                    <div className={styles.footerwrapper} >
+                        <div className={styles.circle} ></div>
+                        <div className={styles.footertext_wrapper} >
+                            <h2> NJUBA </h2>
+                            <p> Community </p>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.communitywrapper} >
+                    <p class="text-black font-[Montserrat] font-medium italic text-[20px] leading-35"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo. Nulla varius vitae. </p>
+                    <div className={styles.footerwrapper} >
+                        <div className={styles.circle} ></div>
+                        <div className={styles.footertext_wrapper} >
+                            <h2> THUBA </h2>
+                            <p> Community </p>
+                        </div>
+                    </div>
+                </div>
+           </div>
       </div>
     </>
   )

@@ -1,11 +1,169 @@
 .firstsectionwrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-between;
-    padding: 16px 30px;
-    background: white;
+    gap: 250px;
+    padding: 40px 70px 70px 70px;
 }
-.firstsectionwrapper div input:focus{
-    outline: none;
+.navwrapper{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.listmenu{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+}
+/* .listmenu li{
+    color: #FFF;
+    font-family: 'GraphikMedium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+.dfintrowrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0px;
+    width: 100%;
+}
+.introdesc_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.dfareswrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.dfareswrapper h1{
+    color: #FFF;
+    font-family: 'GraphikMedium';
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.line{
+    border: 2px solid #36691C;
+    width: 52px;
+}
+.dfareswrapper h3{
+    color: #FFF;
+    font-family: 'GraphikMedium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 432px;
+    opacity: 0.6;
+}
+.buttonlinkwrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+.buttonlinkwrapper button{
+    border: 1.5px solid #353434;
+    background: #FFF;
+    color: #275112;
+    font-family: 'GraphikMedium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.buttonlinkwrapper button:hover{
+    border: 1.5px solid #353434;
+    background: #275112;
+    color: #FFF;
+}
+.buttonlinkwrapper .link{
+    color: #FFF;
+    font-family: 'GraphikMedium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #36691C;
+    padding: 12px 20px;
+    align-self: center;
+    cursor: pointer;
+}
+.buttonlinkwrapper .link:hover{
+    color: #36691C;
+    background: #FFF;
+    transition: all 0.5s ease-in-out;
+}
+
+.dfbiglogo{
+    background: url('/assets/dfbiglogo.png'), lightgray 50% / cover no-repeat;
+    mix-blend-mode: exclusion;
+}
+
+@media screen and (max-width:1000px) {
+
+    .dfintrowrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0px;
+        width: 100%;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .firstsectionwrapper{
+        padding: 40px 20px 70px 20px;
+        gap: 80px;
+    }
+    .listmenu{
+        gap: 20px;
+    }
+    /* .listmenu li{
+        font-size: 14px;
+    } */
+    .dflogo{
+        width: 58px;
+        height: 50px;
+    }
+    .dfintrowrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0px;
+        width: 100%;
+    }
+    .dfareswrapper h1{
+        font-size: 35px;
+    }
+    .dfareswrapper h3{
+        font-size: 18px;    
+        width: 340px;
+        opacity: 0.6;
+    }
+    .buttonlinkwrapper{
+        gap: 25px;
+    }
+    .buttonlinkwrapper button{
+        font-size: 14px;
+        padding: 10px 16px;
+
+    }
+    .buttonlinkwrapper .link{
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+   
 }

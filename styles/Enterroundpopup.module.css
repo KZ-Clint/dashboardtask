@@ -1,0 +1,46 @@
+.popup_background{
+    width: 100vw;
+    height: 100vh;
+    background:rgba(1,1,1,0.5);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+.popup_wrapper{
+    display: flex;
+    gap: 20px;
+    width: 0px;
+    padding: 0px ;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+.open{
+    visibility: visible;
+    z-index: 4;
+    width: 600px;
+    padding: 40px 20px ;
+}
+.popupform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.popupform input{
+    padding: 12px;
+    border: 1px solid rgb(156, 156, 156);
+    width: 100%;
+}
+.popupform button{
+    background: #A0CC8B;
+    padding: 12px 60px;
+    width: fit-content;
+    border-radius: 4px;
+}

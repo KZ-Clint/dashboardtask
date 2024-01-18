@@ -1,19 +1,17 @@
 import '../app/globals.css';
-import Nav from './Nav';
-import Sidebar from './Sidebar';
+import { useContext } from 'react';
+import { Context } from './Context';
+
 
 export default function Layout ({children}) {
 
+  const { roundPopup, setRoundPopup   } = useContext(Context)
+
   return (
     <>
-    <div className='mainwrapper' >
-        <Nav/>
-        <div className="mainwrapper2" >
-            <Sidebar/>
-            {children}
-        </div>
+    <div className={`mainwrapper${roundPopup ? "hidden" : ''}`} >
+       {children}
     </div>
-      
     </>
   )
 }

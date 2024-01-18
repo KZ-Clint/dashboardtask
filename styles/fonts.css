@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'GraphikBlack';
+    src: url('/fonts/GraphikBlack.otf') format('opentype');
+    /* Add more src declarations for different font formats if necessary */
+    /* Add additional font properties if desired (e.g., font-weight, font-style) */
+  }
+@font-face {
+    font-family: 'GraphikMedium';
+    src: url('/fonts/GraphikMedium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GraphikRegular';
+    src: url('/fonts/GraphikRegular.otf') format('opentype');
+}
