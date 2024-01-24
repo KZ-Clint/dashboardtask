@@ -1,0 +1,124 @@
+.loaderbox{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(1,1,1,0.5);
+    position: fixed;
+    z-index: 4;
+}
+.gen_wrapper{
+    display: flex;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-320px);
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    background: white;
+  } 
+.open {
+    transform: translateX(0);
+}
+.cart_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+    padding: 40px 15px;
+}
+.cart_wrapper h3{
+    color: #737373;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #737373;
+}
+.item_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    gap: 15px;
+}
+.item_wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+  /* Track */
+.item_wrapper::-webkit-scrollbar-track {
+   border-radius: 20px;
+}
+  /* Handle */
+.item_wrapper::-webkit-scrollbar-thumb {
+   background-color: rgb(196, 191, 191);
+   border-radius: 20px;
+}
+.individual_item_wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cacaca;
+}
+.individual_item_wrapper img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.individual_item_wrapper_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 170px;
+    
+}
+.individual_item_wrapper_div_p{
+    color: #737373;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+.total{
+    color: #444444;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+.quantity_wrapper{
+    display: flex;
+    gap: 16px;
+}
+.quantity_wrapper p{
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+.quantity_wrapper h3{
+    color: #444444;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}

@@ -1,0 +1,41 @@
+.best_seller_wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.main_wrapper{
+    display: flex;
+    width: 80%;
+    padding: 48px 0px;
+    flex-direction: column;
+    gap: 24px;
+}
+.main_wrapper h3{
+    color: #252B42;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    padding-bottom: 2px solid #ECECEC;
+    width: 100%;
+}
+.card_grid{
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    display: grid;
+    row-gap: 30px;
+    column-gap: 24px;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .best_seller_wrapper{
+        display: none;
+    }
+
+}

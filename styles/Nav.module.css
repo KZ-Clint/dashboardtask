@@ -1,38 +1,89 @@
-.navmainwrapper{
+.nav_main_wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-    gap: 20px;
-    background: var(--neutral-900, #171717);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
+    padding: 10px 24px;
+    justify-content: space-between;
+    background: var(--secondary-color-1, #23856D);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
     z-index: 3;
     top: 0;
-    width: 100%;
 }
-.navmainwrapper ul li{
+.phone_mail_wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
     align-items: center;
-    gap: 6px;
-    cursor: pointer;
+    gap: 10px;
 }
-.navmainwrapper ul li span{
-    /* color: var(--white, #FFF); */
-    color: white;
+.phone_wrapper{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.phone_wrapper h6{
+    color: var(--light-text-color, #FFF);
+    font-family: 'Montserrat';
     font-size: 14px;
-    font-family: "Poppins";
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.mail_wrapper{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.mail_wrapper h6{
+    color: var(--light-text-color, #FFF);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.followus_text{
+    color: var(--light-text-color, #FFF);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.followus_wrapper{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.followus_wrapper h6{
+    color: var(--light-text-color, #FFF);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.followus_wrapper ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.499px;
+}
+.followus_wrapper ul li{
+    display: flex;
+    align-items: center;
 }
 
+@media screen and (max-width:1000px) {
 
-@media screen and (max-width:900px) {
-
-   
+    .nav_main_wrapper{
+        display: none;
+    }
 
 }

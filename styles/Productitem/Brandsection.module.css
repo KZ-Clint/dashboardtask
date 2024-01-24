@@ -1,0 +1,32 @@
+.brand_wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.brand_wrapper div{
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+@media screen and (max-width:900px) {
+
+    .brand_wrapper div{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        gap: 50px;
+    }
+    .brand_wrapper div img{
+        width:140px;
+        height:140px;
+        object-fit: contain;
+    }
+
+}

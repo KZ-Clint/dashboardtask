@@ -1,0 +1,142 @@
+.home_nav_wrapper{
+    display: flex;
+    width: 100%;
+    padding: 0px 17px 0px 38px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+.home_nav_wrapper h3{
+    color: var(--text-color, #252B42);
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 0.1px;
+    padding: 13px 79px 13px 0px;
+}
+.second_wrapper{
+    display: flex;
+    width: 100%;
+    padding: 2px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav_list_wrapper li{
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.2px;
+}
+.nav_right_wrapper{
+    display: flex;
+    align-items: center;
+}
+.signup_wrapper{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 5px;
+}
+.login_register_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.login_register_wrapper button{
+    color: var(--primary-color, #23A6F0);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.login_register_wrapper p{
+    color: var(--primary-color, #23A6F0);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.nav_icon_wrapper{
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+.nav_icon_wrapper h6{
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    color: var(--primary-color, #23A6F0);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+.menu{
+    display:none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .home_nav_wrapper{
+        padding: 10px 20px;
+        justify-content: space-between;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: sticky;
+        z-index: 3;
+        top: 0;
+        background: white;
+        gap: 0px;
+    }
+    .home_nav_wrapper h3{
+        font-size: 21px;
+        padding: 13px 0px 13px 0px;
+    }
+    .second_wrapper{
+        display: flex;
+        width: fit-content;    
+    }
+    .nav_list_wrapper{
+        display: none;
+    }
+    .signup_wrapper{
+        display: none;
+    }
+    .nav_icon_wrapper{
+        padding: 10px ;
+    }
+    .nav_icon_wrapper h6{
+        position: absolute;
+        top: 6px;
+        right: 5px;
+    
+    }
+    .menu{
+        display: flex;
+        cursor: pointer;
+        width: 17px;
+        height: 17px;
+        margin: 10px;
+    }
+  
+
+}

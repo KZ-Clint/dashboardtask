@@ -27,13 +27,14 @@ ul{
 }
 .mainwrapper{
   display: flex;
+  flex-direction: column;
+  margin-top: 20px;
   width: 100%;
-  background: #A0CC8B;
 }
 .mainwrapperhidden{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  background: #A0CC8B;
   height: 100vh;
   overflow: hidden;
 }
@@ -41,11 +42,30 @@ ul{
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 20px 0px;
 }
+.gen_product_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+
+@media screen and (max-width:1000px) {
+
+  .mainhomewrapper{
+    padding: 0px 0px;
+  }
+  .mainwrapper{
+    margin-top: 0px;
+  }
+
 }

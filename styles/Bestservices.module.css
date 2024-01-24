@@ -1,0 +1,103 @@
+.bestserviceswrapper{
+    display: flex;
+    width: 100%;
+    padding: 80px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.header_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.header_wrapper h4{
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 0.2px;
+}
+.header_wrapper h3{
+    color: var(--text-color, #252B42);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+.header_wrapper h5{
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.service_item_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.service_item_wrapper div{
+    display: flex;
+    padding: 35px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 350px;
+}
+.service_item_wrapper div h3{
+    color: var(--text-color, #252B42);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: 0.1px;
+}
+.service_item_wrapper div p{
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .bestserviceswrapper{
+        padding: 80px 20px;
+    }
+    .service_item_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .service_item_wrapper div img{
+       width: 200px;
+       height: 200px;
+       object-fit: contain;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .service_item_wrapper div img{
+       width: fit-content;
+       height: fit-content;
+       object-fit: contain;
+    }
+}
